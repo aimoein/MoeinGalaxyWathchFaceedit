@@ -1,0 +1,31 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- Circular Watch Background -->
+    <path
+        android:fillColor="#0B1320"
+        android:pathData="M100,100m-95,0a95,95 0,1 1,190 0a95,95 0,1 1,-190 0" />
+    <!-- Bezel Ring -->
+    <path
+        android:strokeColor="#D4AF37"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"
+        android:pathData="M100,100m-92,0a92,92 0,1 1,184 0a92,92 0,1 1,-184 0" />
+    <path
+        android:strokeColor="#2DD4BF"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:pathData="M100,100m-86,0a86,86 0,1 1,172 0a86,86 0,1 1,-172 0" />
+    <!-- Inner dial indicators -->
+    <path
+        android:fillColor="#2DD4BF"
+        android:pathData="M100,20 L100,26 M100,180 L100,174 M20,100 L26,100 M180,100 L174,100"
+        android:strokeWidth="2"
+        android:strokeColor="#2DD4BF" />
+    <!-- Clock Center Accent -->
+    <path
+        android:fillColor="#D4AF37"
+        android:pathData="M100,100m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0" />
+</vector>

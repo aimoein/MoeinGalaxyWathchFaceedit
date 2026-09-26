@@ -1,0 +1,6 @@
+{
+  "name": "تقویم واچ",
+  "description": "ویجت و واچ‌فیس تقویم شمسی برای انواع گلکسی واچ سامسونگ با طراحی مدرن، تنظیمات شخصی‌سازی و مصرف بهینه باتری",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

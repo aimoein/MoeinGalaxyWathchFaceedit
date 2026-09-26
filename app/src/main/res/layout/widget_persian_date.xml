@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- Big Clock Display (ساعت درشت) -->
+    <TextView
+        android:id="@+id/widget_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2DD4BF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:text="--:--" />
+
+    <!-- Smaller Persian Date (تاریخ شمسی کوچکتر) -->
+    <TextView
+        android:id="@+id/widget_persian_full_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="جمعه ۳ مهر ۱۴۰۵" />
+
+    <!-- Complications Bar (ویجت‌های باتری، ضربان قلب و تحرک) -->
+    <LinearLayout
+        android:id="@+id/widget_complications_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/widget_heart_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF3366"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:text="♥ ۷۸" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:textColor="#64748B"
+            android:textSize="10sp"
+            android:text="•" />
+
+        <TextView
+            android:id="@+id/widget_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#10B981"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:text="⚡ ۷,۴۵۰" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:textColor="#64748B"
+            android:textSize="10sp"
+            android:text="•" />
+
+        <TextView
+            android:id="@+id/widget_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#38BDF8"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:text="۸۸٪" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/widget_occasion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#FDE047"
+        android:textSize="9.5sp"
+        android:text="" />
+
+</LinearLayout>
